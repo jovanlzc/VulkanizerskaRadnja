@@ -33,7 +33,7 @@ public class AutoGuma {
 	 * @param markaModel nova vrednost za marku modela.
 	 * @throws java.lang.RuntimeException ako je uneta marka null ili duzine manje od 3 slova.
 	 */
-	public void setMarkaModel(String markaModel) {
+	public void setMarkaModel(String markaModel){
 		if (markaModel==null || markaModel.length()<3)
 			throw new RuntimeException("Morate uneti marku i model");
 		this.markaModel = markaModel;
@@ -50,7 +50,7 @@ public class AutoGuma {
 	 * @param precnik nova vrednost za precnik.
 	 * @throws java.lang.RuntimeException ako je uneti precnik manji od 13 ili veci od 22.
 	 */
-	public void setPrecnik(int precnik) {
+	public void setPrecnik(int precnik){
 		if (precnik < 13 && precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
@@ -67,7 +67,7 @@ public class AutoGuma {
 	 * @param sirina nova vrednost za sirinu gume.
 	 * @throws java.lang.RuntimeException ako je uneta sirina manja od 135 ili veca od 355.
 	 */
-	public void setSirina(int sirina) {
+	public void setSirina(int sirina){
 		if (sirina < 135 && sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
@@ -84,7 +84,7 @@ public class AutoGuma {
 	 * @param visina nova vrednost za visinu gume.
 	 * @throws java.lang.RuntimeException ako je uneta visina manja od 25 ili veca od 95.
 	 */
-	public void setVisina(int visina) {
+	public void setVisina(int visina){
 		if (visina < 25 || visina > 95)
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
@@ -124,5 +124,6 @@ public class AutoGuma {
 			return false;
 		return true;
 	}
+	
 
 }
